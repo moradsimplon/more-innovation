@@ -6,7 +6,16 @@ html,body{
   margin: 0;
   font-family: sans-serif;
 }
+img{
+  height: 100%;
+  width: 100%;
+}
 
+/*
+POLICE
+font-family: 'Pacifico', cursive;
+font-family: 'Baloo', cursive;
+font-family: 'Raleway', sans-serif;*/
 
 /* @@@@@@@@@ More Innovation @@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -18,14 +27,79 @@ html,body{
 @@@@@@@@@@@@@@@@@*/
 
 header{
-
+  position: fixed;
+  background-color: rgb(66, 120, 130 ,0.9);
+  width: 60px;
+  height: 60px;
+  border-radius: 0 0 100% 0;
+  transition: 0.4s;
+  overflow: hidden;
 }
 /*nav*/
 
+header .fa{
+  display: block;
+  margin: 8px 0 0 8px;
+  font-size: 30px;
+  width: 30px;
+}
 nav{
-
+  transition: 0.3s;
+}
+#hamb{
+  display: none;
+}
+#hamb:checked ~ #header{
+  height: 200px;
+  width: 200px;
 }
 
+#hamb:checked ~ #header nav{
+  display: inline-block;
+}
+
+header ul{
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+header li{
+  line-height: ;
+}
+header li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+header li a::before{
+  content:".";
+  visibility: hidden;
+}
+header li a:hover::before{
+  visibility: visible;
+}
+/* @@@@@@@@@ HOME @@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@*/
+body{
+  background-image: url(../img/phone/homepagephone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position: -280px;
+  background-clip: border-box;
+  background-attachment: fixed;
+}
+#home{
+  width: 85%;
+  height: 100vh;
+  margin-left: 15%;
+}
+
+#home figure{
+  width: 90px;
+  /*position: absolute;*/
+}
 
 
 
@@ -125,7 +199,13 @@ nav{
 
 /*PRESTATION PAGE -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
+#prestation{
+  margin-left: 15%;
+}
 
+#prestation figure{
+  width: 100px;
+}
 
 
 
