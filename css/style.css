@@ -27,6 +27,8 @@ font-family: 'Raleway', sans-serif;*/
 @@@@@@@@@@@@@@@@@*/
 
 header{
+  top: 0;
+  z-index: 3;
   position: fixed;
   background-color: rgb(66, 120, 130 ,0.9);
   width: 60px;
@@ -86,74 +88,94 @@ body{
   background-image: url(../img/phone/homepagephone.jpg);
   background-repeat: no-repeat;
   background-size: cover ;
-  background-position: -280px;
+  background-position: right;
   background-clip: border-box;
   background-attachment: fixed;
 }
 #home{
-  width: 85%;
   height: 100vh;
-  margin-left: 15%;
+  display: flex;
+  justify-content: center;
 }
+
+/*TITRE*/
 h1{
-  z-index: -1;
-  position: absolute;
-  margin-top: 50px;
-  font-family: 'Raleway', sans-serif;
+  line-height: 1em;
+  margin-top: 80px;
+  font-size: 2.9em;
+  color: white;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+}
+h1 span{
+  font-size: 0.8em;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
-  font-size: 2em;
-  color: white;
+  font-family: 'Raleway', sans-serif;
 }
-#home figure{
-  width: 90px;
+
+/*CAROUSEL*/
+.carousel{
+  overflow: hidden;
   position: absolute;
-  top: 240px;
+  width: 320px;
+  background-color: rgb(58, 58, 58,0.6);
+  height: 90px;
+  bottom: 15%;
+}
+.carousel::after{
+  content:'"La créativité est contagieuse"';
+  position: absolute;
+  width: 80%;
+  margin: 15px 0 0 10%;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  line-height: 20px;
+}
+.car1,.car2,.car3,.car4,.car5,.car6,.car7,.car8{
+  z-index: 2;
+  width: 135px;
+  position: absolute;
+  animation: carousel;
+  animation-duration: 10.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: translateX(-100%);
 }
 
+@keyframes carousel {
+  to{
+    transform: translateX(320px);
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.car1{
+  animation-delay:3s;
+}
+.car2{
+  animation-delay:6s;
+}
+.car3{
+  animation-delay:9s;
+}
+.car4{
+  animation-delay:12s;
+}
+.car5{
+  animation-delay:15s;
+}
+.car6{
+  animation-delay:18s;
+}
+.car7{
+  animation-delay:21s;
+}
+.car8{
+  animation-delay:24s;
+}
 
 /*EQUIPE PAGE -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
@@ -210,7 +232,7 @@ h1{
 /*PRESTATION PAGE -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
 #prestation{
-  margin-left: 15%;
+  background-color: lightblue;
 }
 
 #prestation figure{
