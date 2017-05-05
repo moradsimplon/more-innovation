@@ -231,15 +231,40 @@ h1 span{
 
 /*PRESTATION PAGE -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
-#prestation{
-  background-color: lightblue;
+.prestation{
+  background-color: #fff5cc;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-#prestation figure{
-  width: 100px;
+h3{
+  font-size: 34px;
+  font-family: pacifico;
+  margin-top: 10px;
 }
 
+.prestation figure{
+  width: 270px;
+}
 
+.prestation article {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.prestation h4{
+  position: absolute;
+  top: 25px;
+  z-index: 1;
+  text-align: center;
+}
+.prestation p{
+  width: 80%;
+  position: absolute;
+  text-align: center;
+}
 
 
 
