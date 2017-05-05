@@ -6,6 +6,9 @@ html,body{
   margin: 0;
   font-family: sans-serif;
 }
+h3 {
+  font-family: 'Pacifico', cursive;
+}
 
 
 /* @@@@@@@@@ More Innovation @@@@@@@@
@@ -83,7 +86,7 @@ nav{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   align-items: center;
   /*margin: 15px;*/
   padding: 15px;
@@ -91,7 +94,7 @@ nav{
 }
 .team figure {
   width :200px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   text-align: center;
   background-color: grey;
   margin: 20px;
@@ -130,7 +133,7 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   width: 100%;
 }
 }
@@ -234,8 +237,13 @@ h3{
   width :50%;
   text-align: center;
   display: flex;
+  justify-content: center;
+}
+tbody{
+  width: 100%;
 }
 td {
+
   padding: 5px;
 }
 .carte{
@@ -413,7 +421,12 @@ fieldset {
 /*FOOTER -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
 footer {
-  height: 100px;
+  height: 140px;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+  line-height: 1px;
 }
 .footer {
   display: flex;
@@ -426,7 +439,13 @@ footer ul {
   padding: 0;
 }
 footer  nav {
-  margin: 15%;
+  margin: 10%;
+}
+footer li{
+  margin: 5px;
+}
+footer .reseausocial .fa {
+  font-size: 25px;
 }
 
 
@@ -447,9 +466,6 @@ footer  nav {
 
 
 
-
-
-@media (min-width: 768px) {
   /*HOME PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
 
@@ -484,14 +500,7 @@ footer  nav {
   /*EQUUIPE PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
 
-
-
-
-
-
-
-
-
+  @media (min-width: 768px) {
 
 
 
@@ -581,8 +590,13 @@ footer  nav {
   /*FOOTER -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
 
+  footer .reseausocial .fa {
+    font-size: 29px;
+  }
 
-
+footer .menufoot .fa{
+  font-size: 22px;
+}
 
 
 
