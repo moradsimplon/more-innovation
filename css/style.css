@@ -424,54 +424,6 @@ h3{
 
 
 
-
-/*
-header .fa{
-  display: block;
-  margin: 8px 0 0 8px;
-  font-size: 30px;
-  width: 30px;
-}
-nav{
-  transition: 0.3s;
-}
-#hamb{
-  display: none;
-}
-#hamb:checked ~ #header{
-  height: 200px;
-  width: 200px;
-  background-color: rgb(152, 167, 148,0.8);
-}
-
-#hamb:checked ~ #header nav{
-  display: inline-block;
-}
-
-header ul{
-  list-style: none;
-  margin-top: 10px;
-  padding-left: 20px;
-}
-header li{
-  line-height: ;
-}
-header li a{
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-header li a::before{
-  content:".";
-  visibility: hidden;
-}
-header li a:hover::before{
-  visibility: visible;
-}*/
-
-/* /!\ADAPTATION CAROUSEL RESPONCIVE*/
 @media (min-width: 420px) {
   /*HOME PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
@@ -519,6 +471,10 @@ header li a:hover::before{
   }
 
 }
+
+
+
+
 @media (min-width: 650px) {
   /* @@@@@@@@@ header @@@@@@@@@@@@
   @@@@@@@@@@@@@@@@@*/
@@ -527,9 +483,23 @@ header li a:hover::before{
   .carousel{
     width: 650px;
   }
+
+
+
+
+
 @media (min-width: 768px) {
   /*HOME PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
+  h1{
+    font-size: 6em;
+    margin-top: 150px;
+  }
+  /*carousel*/
+  .carousel{
+    width: 768px;
+  }
+
 
 
 
@@ -686,7 +656,14 @@ header li a:hover::before{
 @media (min-width: 992px) {
   /*HOME PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
-
+  #home{
+    width: 85%;
+    right: 0;
+  }
+  /*carousel*/
+  .carousel{
+    width: 992px;
+  }
 
 
 
@@ -851,4 +828,16 @@ header li a:hover::before{
 
 
 
+}
+
+@media (min-width: 1192px) {
+  /*HOME PAGE -------/------/-----/----/---/--/-/-----
+  @@@@@@@@@@@*/
+  h1{
+    margin-top: 50px;
+  }
+  /*carousel*/
+  .carousel{
+    width: 1192px;
+  }
 }
