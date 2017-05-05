@@ -429,7 +429,56 @@ h3{
 
 
 
+@media (min-width: 450px) {
+  /*HOME PAGE -------/------/-----/----/---/--/-/-----
+  @@@@@@@@@@@*/
 
+  /*carousel*/
+  .carousel{
+    overflow: hidden;
+    position: absolute;
+    width: 450px;
+    background-color: rgb(58, 58, 58,0.6);
+    height: 150px;
+    bottom: 15%;
+  }
+  .car1,.car2,.car3,.car4,.car5,.car6,.car7,.car8{
+    width: 225px;
+    animation-duration: 24s;
+    transform: translateX(-100%);
+  }
+
+  @keyframes carousel {
+    to{
+      transform: translateX(1550px);
+    }
+  }
+
+  .car1{
+    animation-delay:3s;
+  }
+  .car2{
+    animation-delay:6s;
+  }
+  .car3{
+    animation-delay:9s;
+  }
+  .car4{
+    animation-delay:12s;
+  }
+  .car5{
+    animation-delay:15s;
+  }
+  .car6{
+    animation-delay:18s;
+  }
+  .car7{
+    animation-delay:21s;
+  }
+  .car8{
+    animation-delay:24s;
+  }
+}
 @media (min-width: 768px) {
   /*HOME PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
