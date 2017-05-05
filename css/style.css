@@ -236,15 +236,18 @@ h1 span{
 
 /*PRESTATION PAGE -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
-.prestation{
-  background-color: #c69b59;
+.prestation , #prestaplus{
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+.prestation{
+  background-color: #c69b59;
+}
 
 /*titre préstation*/
 h3{
+  font-weight: 400;
   margin-top: 10px;
   font-size: 44px;
   font-family: pacifico;
@@ -267,44 +270,47 @@ h3{
   border-radius: 5px;
 }
 /*titre article*/
+.prestation h4, .prestation p{
+  position: absolute;
+  text-align: center;
+  font-family: raleway;
+}
 .prestation h4{
-  color: white;
+  color: #fcfff8;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
-  /*background-color: rgb(83, 163, 178 ,0.9);*/
   background-color: #98a794;
   width: 300px;
-  font-family: raleway;
   font-size: 26px;
-  position: absolute;
   top: 40px;
   z-index: 1;
-  text-align: center;
 }
 .prestation p{
-  font-family: raleway;
-  /*font-style: italic;*/
   padding: 5px;
   width: 200px;
-  position: absolute;
-  text-align: center;
   top: 75px;
   background-color: rgb(201, 216, 197,0.9);
   border-radius: 0 0 20px 0px;
-  border-bottom: 1px solid #000;
-  /*border-left: 1px solid #000;*/
+  border-bottom: 3px solid #000;
 }
 
 .prestation label{
+  box-shadow: 0px 0px 3px 2px grey inset;
+  color: white;
   border: 1px solid #936d2d;
   font-weight: bold;
   margin-top: 20px;
   padding: 5px;
   width: 100px;
   height: 40px;
-  background-color: #fcfff8;
+  background-color: #98a794;
   text-align: center;
   border-radius: 0 10px 0 10px;
+}
+
+.prestation label:active{
+  box-shadow: 0px 0px 3px 1px black inset;
+
 }
 
 #Cprestaplus{
@@ -314,9 +320,6 @@ h3{
   height: 80px;
   overflow: hidden;
   transition: 1s;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 #Cprestaplus:checked ~ #prestaplus{
   height: 1080px;
