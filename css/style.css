@@ -226,13 +226,20 @@ nav{
   flex-direction: column;
   margin: 30px;
 }
-h3, .adresse {
-  width :100%;
+h3{
+  width:100%;
   text-align: center;
 }
-
+ .adresse {
+  width :50%;
+  text-align: center;
+  display: flex;
+}
+td {
+  padding: 5px;
+}
 .carte{
-  margin: 30px;;
+  margin: 30px;
 align-items: center;
 }
 iframe{
@@ -405,10 +412,22 @@ fieldset {
 
 /*FOOTER -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
-
-
-
-
+footer {
+  height: 100px;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer  nav {
+  margin: 15%;
+}
 
 
 
