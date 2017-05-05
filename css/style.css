@@ -28,9 +28,9 @@ font-family: 'Raleway', sans-serif;*/
 
 header{
   top: 0;
+  background-color: rgb(152, 167, 148);
   z-index: 3;
   position: fixed;
-  background-color: rgb(66, 120, 130 ,0.9);
   width: 60px;
   height: 60px;
   border-radius: 0 0 100% 0;
@@ -54,6 +54,7 @@ nav{
 #hamb:checked ~ #header{
   height: 200px;
   width: 200px;
+  background-color: rgb(152, 167, 148,0.8);
 }
 
 #hamb:checked ~ #header nav{
@@ -180,7 +181,11 @@ h1 span{
 /*EQUIPE PAGE -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
 
-
+#equipe{
+  background-color:  #c9d8c5;
+  height: 100vh;
+  width: 100%;
+}
 
 
 
@@ -232,38 +237,89 @@ h1 span{
 /*PRESTATION PAGE -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
 .prestation{
-  background-color: #fff5cc;
+  background-color: #c69b59;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+/*titre préstation*/
 h3{
-  font-size: 34px;
-  font-family: pacifico;
   margin-top: 10px;
+  font-size: 44px;
+  font-family: pacifico;
+  border-bottom: 3px solid #000;
 }
 
-.prestation figure{
-  width: 270px;
-}
-
+/*articles*/
 .prestation article {
   position: relative;
   display: flex;
   justify-content: center;
+  background-image: url();
 }
 
+.prestation figure{
+  width: 300px;
+  height: 200px;
+  margin-top: 40px;
+  box-shadow: 1px 1px 5px 1px #936d2d;
+  border-radius: 5px;
+}
+/*titre article*/
 .prestation h4{
+  color: white;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  /*background-color: rgb(83, 163, 178 ,0.9);*/
+  background-color: #98a794;
+  width: 300px;
+  font-family: raleway;
+  font-size: 26px;
   position: absolute;
-  top: 25px;
+  top: 40px;
   z-index: 1;
   text-align: center;
 }
 .prestation p{
-  width: 80%;
+  font-family: raleway;
+  /*font-style: italic;*/
+  padding: 5px;
+  width: 200px;
   position: absolute;
   text-align: center;
+  top: 75px;
+  background-color: rgb(201, 216, 197,0.9);
+  border-radius: 0 0 20px 0px;
+  border-bottom: 1px solid #000;
+  /*border-left: 1px solid #000;*/
+}
+
+.prestation label{
+  border: 1px solid #936d2d;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 5px;
+  width: 100px;
+  height: 40px;
+  background-color: #fcfff8;
+  text-align: center;
+  border-radius: 0 10px 0 10px;
+}
+
+#Cprestaplus{
+  display: none;
+}
+#prestaplus{
+  height: 80px;
+  overflow: hidden;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#Cprestaplus:checked ~ #prestaplus{
+  height: 1080px;
 }
 
 
@@ -305,7 +361,11 @@ h3{
 /*CONTACT -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
 
-
+#contact{
+  background-color: #c9d8c5;
+  width: 100%;
+  height: 500px;
+}
 
 
 
@@ -344,6 +404,7 @@ h3{
 
 /*FOOTER -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
+
 
 
 
