@@ -81,62 +81,51 @@ nav{
 
 @media (min-width:320px) {
 
+.team em {
+  font-family:'Raleway',cursive;
+  font-weight: bold;
 
+}
 .team {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  /*border: 1px solid black;*/
   align-items: center;
-  /*margin: 15px;*/
+  background-color: #fcfff8;
   padding: 15px;
-
 }
 .team figure {
   width :200px;
-  /*border: 1px solid black;*/
   text-align: center;
-  background-color: grey;
   margin: 20px;
   padding: 5px;
+  border-radius: 10%;
+  box-shadow: 4px black;
+}
+ figcaption , .team p {
+   font-weight: bold;
+  font-size: 18px;
+  font-family: 'Baloo' cursive;
+  text-align: center;
 }
 .team img {
   border-radius: 100%;
   padding: 3px;
+  background-color: white;
+  border: 4px solid #98a794;
 }
 .team h3{
   padding: 15px;
   text-align: center;
   width: 100%;
   line-height: 1.3;
+  font-size: 30px;
 }
-.team p {
-  text-align: center;
+.team em{
+  color: #98a794;
 }
 }
 
-@media ( min-width:760px) {
-
-
-.team {
-  flex-direction: row;
-}
-.team figure{
-  width: 300px;
-  height:350px;
-}
-.team img {
-  width: 240px;
-
-}
-.figure{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  /*border: 1px solid black;*/
-  width: 100%;
-}
-}
 
 
 
@@ -224,14 +213,14 @@ nav{
 
 
 .partcontact, .carte{
-  /*border:1px solid black;*/
   display: flex;
   flex-direction: column;
-  margin: 30px;
 }
-h3{
+.partcontact h3{
+  font-size: 25px;
   width:100%;
   text-align: center;
+  color: #98a794;
 }
  .adresse {
   width :50%;
@@ -252,6 +241,10 @@ align-items: center;
 }
 iframe{
   margin:20px;
+}
+
+.partcontact{
+  background-color: #fcfff8;
 }
 .container{
   margin: 0;
@@ -347,7 +340,7 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #4CAF50;
+  background: #98a794;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
@@ -373,14 +366,6 @@ fieldset {
 }
 
 
-@media (min-width:720px) {
-
- iframe {
-
-  width: 600px;
-  height: 300px;
-}
-}
 
 
 
@@ -422,6 +407,7 @@ fieldset {
 @@@@@@@@@@@*/
 footer {
   height: 140px;
+  background-color: rgba(152, 167, 148, 0.7)
 }
 footer a {
   color: black;
@@ -429,6 +415,7 @@ footer a {
   line-height: 1px;
 }
 .footer {
+  padding: 2%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -504,6 +491,25 @@ footer .reseausocial .fa {
 
 
 
+      .team {
+        flex-direction: row;
+      }
+      .team figure{
+        width: 300px;
+        height:350px;
+      }
+      .team img {
+        width: 240px;
+
+      }
+      .figure{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+      }
+
+
 
 
 
@@ -558,6 +564,14 @@ footer .reseausocial .fa {
   /*CONTACT PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
 
+  @media (min-width:720px) {
+
+    iframe {
+
+      width: 600px;
+      height: 300px;
+    }
+  }
 
 
 
@@ -589,6 +603,9 @@ footer .reseausocial .fa {
 
   /*FOOTER -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
+footer{
+  height: 165px;
+}
 
   footer .reseausocial .fa {
     font-size: 29px;
@@ -618,6 +635,7 @@ footer .menufoot .fa{
 
 
 }
+
 
 @media (min-width: 992px) {
   /*HOME PAGE -------/------/-----/----/---/--/-/-----
