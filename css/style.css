@@ -242,59 +242,62 @@ h1 span{
   flex-direction: column;
 }
 .prestation{
-  background-color: #c69b59;
+  background-color: #fcfff8;
 }
 
 /*titre préstation*/
 h3{
-  font-weight: 400;
+  color: #00a19e;
+  font-weight: 200;
   margin-top: 10px;
   font-size: 44px;
-  font-family: pacifico;
-  border-bottom: 3px solid #000;
+  font-family: raleway;
+  border-bottom: 3px solid #00a19e;
+  border-top: 3px solid #00a19e;
 }
 
 /*articles*/
-.prestation article {
+.prestation .allarticles article {
   position: relative;
-  display: flex;
-  justify-content: center;
   background-image: url();
+  margin-top: 40px;
+  overflow: hidden;
 }
 
-.prestation figure{
+.prestation .allarticles figure{
   width: 300px;
   height: 200px;
-  margin-top: 40px;
   box-shadow: 1px 1px 5px 1px #936d2d;
   border-radius: 5px;
 }
 /*titre article*/
-.prestation h4, .prestation p{
+.prestation .allarticles h4, .prestation .allarticles p{
   position: absolute;
   text-align: center;
   font-family: raleway;
 }
-.prestation h4{
+.prestation .allarticles h4{
+  padding-top: 9px;
+  pb9
   color: #fcfff8;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  background-color: #98a794;
+  border-top: 2px solid #65ffff;
+  border-bottom: 2px solid #65ffff;
+  background-color: #00a19e;
   width: 300px;
   font-size: 26px;
-  top: 40px;
+  top: 0;
   z-index: 1;
 }
-.prestation p{
+.prestation .allarticles p{
   padding: 5px;
   width: 200px;
-  top: 75px;
+  top: 30px;
   background-color: rgb(201, 216, 197,0.9);
   border-radius: 0 0 20px 0px;
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #65ffff;
 }
 
-.prestation label{
+.prestation .allarticles label{
   box-shadow: 0px 0px 3px 2px grey inset;
   color: white;
   border: 1px solid #936d2d;
@@ -308,7 +311,7 @@ h3{
   border-radius: 0 10px 0 10px;
 }
 
-.prestation label:active{
+.prestation .allarticles label:active{
   box-shadow: 0px 0px 3px 1px black inset;
 
 }
@@ -459,6 +462,11 @@ h3{
     font-size: 3.9em;
   }
   /*carousel*/
+  .carousel::after{
+    margin-top: 35px;
+    font-size: 2.4em;
+    line-height: 38px;
+  }
   .carousel{
     width: 450px;
     height: 150px;
@@ -564,11 +572,32 @@ h3{
 
 
 
-  /*PRESTA PAGE -------/------/-----/----/---/--/-/-----
-  @@@@@@@@@@@*/
+  /*PRESTA PAGE -------/------/-----/----/---/--/-/-----*/
+  .allarticles{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  }
 
+  .firstarticles{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+  }
 
+  .allarticles article {
+    margin: 20px;
+  }
+  .allarticles label{
+    display: none;
+  }
 
+  #prestaplus{
+    height: 540px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
 
 
 
@@ -690,6 +719,9 @@ h3{
     margin-left: 15%;
   }
   /*carousel*/
+  .carousel::after{
+    margin-top: 55px;
+  }
   .carousel{
     width: 85%;
   }
@@ -756,9 +788,28 @@ h3{
 
   /*PRESTA PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
-
-
-
+  .prestation{
+    width: 85%;
+    margin-left: 15%;
+  }
+  .allarticles{
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+  }
+  .prestation .allarticles article p{
+    top: 100%;
+  }
+  .prestation .allarticles article h4{
+    top: 40px;
+  }
+   .firstarticles{
+     flex-flow: column nowrap;
+     margin-right: 20px;
+   }
+   #prestaplus{
+     flex-flow: row wrap;
+   }
 
 
 
