@@ -28,7 +28,8 @@ font-family: 'Raleway', sans-serif;*/
 
 header{
   top: 0;
-  background-color: rgb(152, 167, 148);
+  /*background-color: rgb(152, 167, 148);*/
+  background-color: #00a19e;
   z-index: 3;
   position: fixed;
   width: 60px;
@@ -36,6 +37,9 @@ header{
   border-radius: 0 0 100% 0;
   transition: 0.4s;
   overflow: hidden;
+}
+header figure{
+  display: none;
 }
 /*nav*/
 
@@ -268,6 +272,7 @@ h3{
 .prestation .allarticles figure{
   width: 300px;
   height: 200px;
+  box-shadow: 1px 1px 5px 1px #936d2d;
   border-radius: 5px;
 }
 /*titre article*/
@@ -278,7 +283,7 @@ h3{
 }
 .prestation .allarticles h4{
   padding-top: 9px;
-  pb9
+  padding-bottom: 9px;
   color: #fcfff8;
   border-top: 2px solid #65ffff;
   border-bottom: 2px solid #65ffff;
@@ -701,7 +706,11 @@ h3{
     height: 100%;
     border-radius: 0px;
   }
-
+  header figure{
+    display: block;
+    width: 129px;
+    margin: 20px 0 0 30px;
+  }
   /*nav*/
   header .fa{
     display: none;
