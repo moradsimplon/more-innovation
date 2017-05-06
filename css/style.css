@@ -268,7 +268,6 @@ h3{
 .prestation .allarticles figure{
   width: 300px;
   height: 200px;
-  box-shadow: 1px 1px 5px 1px #936d2d;
   border-radius: 5px;
 }
 /*titre article*/
@@ -292,10 +291,13 @@ h3{
 .prestation .allarticles p{
   padding: 5px;
   width: 200px;
-  top: 30px;
+  top: 40px;
   background-color: rgb(201, 216, 197,0.9);
   border-radius: 0 0 20px 0px;
   border-bottom: 3px solid #65ffff;
+}
+.prestation .allarticles article{
+
 }
 
 .prestation .allarticles label{
@@ -699,6 +701,7 @@ h3{
     height: 100%;
     border-radius: 0px;
   }
+
   /*nav*/
   header .fa{
     display: none;
