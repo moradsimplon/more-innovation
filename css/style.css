@@ -28,8 +28,7 @@ font-family: 'Raleway', sans-serif;*/
 
 header{
   top: 0;
-  /*background-color: rgb(152, 167, 148);*/
-  background-color: #00a19e;
+  background-color: rgb(0, 161, 158);
   z-index: 3;
   position: fixed;
   width: 60px;
@@ -58,7 +57,7 @@ nav{
 #hamb:checked ~ #header{
   height: 200px;
   width: 200px;
-  background-color: rgb(152, 167, 148,0.8);
+  background-color: rgb(0, 161, 158.0.8);
 }
 
 #hamb:checked ~ #header nav{
