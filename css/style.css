@@ -709,7 +709,7 @@ h3{
   header figure{
     display: block;
     width: 129px;
-    margin: 20px 0 0 30px;
+    margin: 20px 0 0 12%;
   }
   /*nav*/
   header .fa{
@@ -805,11 +805,7 @@ h3{
     width: 85%;
     margin-left: 15%;
   }
-  .allarticles{
-    display: flex;
-    flex-flow: row nowrap;
-    height: auto;
-  }
+
   .prestation .allarticles article p{
     top:100%;
     padding-right: 30px;
@@ -828,16 +824,7 @@ h3{
   }
   .prestation article:hover p{
     top:39px;
-
   }
-
-   .firstarticles{
-     flex-flow: column nowrap;
-     margin-right: 20px;
-   }
-   #prestaplus{
-     flex-flow: row wrap;
-   }
 
 
 
@@ -938,11 +925,25 @@ h3{
 
 }
 
-@media (min-width: 1192px) {
+@media (min-width: 1200px) {
   /*HOME PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
   h1{
     margin-top: 50px;
+  }
+  /*PRESTA PAGE -------/------/-----/----/---/--/-/-----
+  @@@@@@@@@@@*/
+  .allarticles{
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+  }
+  .firstarticles{
+    flex-flow: column nowrap;
+    margin-right: 20px;
+  }
+  #prestaplus{
+    flex-flow: row wrap;
   }
 
 }
