@@ -812,7 +812,9 @@ h3{
   }
   .prestation .allarticles article p{
     top:100%;
-    width: 100%;
+    padding-right: 30px;
+    padding-left: 20px;
+    width: 90%;
     height: 90%;
     font-weight: bold;
     transition: 0.4s;
@@ -822,11 +824,11 @@ h3{
     transition: 0.4s;
   }
   .prestation article:hover h4{
-    /*box-shadow: 4px 4px 5px 4px black;*/
     top: 0;
   }
   .prestation article:hover p{
-    top:40px;
+    top:39px;
+
   }
 
    .firstarticles{
