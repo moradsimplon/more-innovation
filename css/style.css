@@ -6,10 +6,21 @@ html,body{
   margin: 0;
   font-family: sans-serif;
 }
+
 h3 {
   font-family: 'Pacifico', cursive;
 }
+img{
+  height: 100%;
+  width: 100%;
 
+}
+
+/*
+POLICE
+font-family: 'Pacifico', cursive;
+font-family: 'Baloo', cursive;
+font-family: 'Raleway', sans-serif;*/
 
 /* @@@@@@@@@ More Innovation @@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -21,58 +32,159 @@ h3 {
 @@@@@@@@@@@@@@@@@*/
 
 header{
-
+  top: 0;
+  background-color: rgb(0, 161, 158);
+  z-index: 3;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 0 0 100% 0;
+  transition: 0.4s;
+  overflow: hidden;
+}
+header figure{
+  display: none;
 }
 /*nav*/
 
+header .fa{
+  display: block;
+  margin: 8px 0 0 8px;
+  font-size: 30px;
+  width: 30px;
+}
 nav{
-
+  transition: 0.3s;
+}
+#hamb{
+  display: none;
+}
+#hamb:checked ~ #header{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(0, 161, 158.0.8);
 }
 
+#hamb:checked ~ #header nav{
+  display: inline-block;
+}
 
+header ul{
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+header li{
+  line-height: ;
+}
+header li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+}
 
+header li a::before{
+  content:".";
+  visibility: hidden;
+}
+header li a:hover::before{
+  visibility: visible;
+}
+/* @@@@@@@@@ HOME @@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@*/
+body{
+  background-image: url(../img/phone/homepagephone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position: right;
+  background-clip: border-box;
+  background-attachment: fixed;
+}
+#home{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
 
+/*TITRE*/
+h1{
+  line-height: 1em;
+  margin-top: 80px;
+  font-size: 2.9em;
+  color: white;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+}
+h1 span{
+  font-size: 0.8em;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  font-family: 'Raleway', sans-serif;
+}
 
+/*CAROUSEL*/
+.carousel{
+  overflow: hidden;
+  position: absolute;
+  width: 320px;
+  background-color: rgba(58, 58, 58,0.6);
+  height: 90px;
+  bottom: 15%;
+}
+.carousel::after{
+  content:'"La créativité est contagieuse"';
+  position: absolute;
+  width: 80%;
+  margin: 15px 0 0 10%;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  line-height: 20px;
+}
+.car1,.car2,.car3,.car4,.car5,.car6,.car7,.car8{
+  z-index: 2;
+  width: 135px;
+  position: absolute;
+  animation: carousel;
+  animation-duration: 10.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: translateX(-100%);
+}
 
+@keyframes carousel {
+  to{
+    transform: translateX(320px);
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.car1{
+  animation-delay:3s;
+}
+.car2{
+  animation-delay:6s;
+}
+.car3{
+  animation-delay:9s;
+}
+.car4{
+  animation-delay:12s;
+}
+.car5{
+  animation-delay:15s;
+}
+.car6{
+  animation-delay:18s;
+}
+.car7{
+  animation-delay:21s;
+}
+.car8{
+  animation-delay:24s;
+}
 
 /*EQUIPE PAGE -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
@@ -100,12 +212,11 @@ nav{
   margin: 20px;
   padding: 5px;
   border-radius: 10%;
-  box-shadow: 4px black;
 }
  figcaption , .team p {
    font-weight: bold;
   font-size: 18px;
-  font-family: 'Baloo' cursive;
+  font-family: 'Baloo', cursive;
   text-align: center;
 }
 .team img {
@@ -126,87 +237,103 @@ nav{
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*PRESTATION PAGE -------/------/-----/----/---/--/-/
+  /*PRESTATION PAGE -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
+  
+.prestation , #prestaplus{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.prestation{
+  background-color: #fcfff8;
+}
+
+/*titre préstation*/
+h3{
+  color: #00a19e;
+  font-weight: 200;
+  margin-top: 10px;
+  font-size: 44px;
+  font-family: raleway;
+  border-bottom: 3px solid #00a19e;
+  border-top: 3px solid #00a19e;
+}
+
+/*articles*/
+.prestation .allarticles article {
+  position: relative;
+  background-image: url();
+  margin-top: 40px;
+  overflow: hidden;
+  box-shadow: 0 0 2px 1px black;
+}
+
+.prestation .allarticles figure{
+  width: 300px;
+  height: 200px;
+  box-shadow: 1px 1px 5px 1px #936d2d;
+  border-radius: 5px;
+}
+/*titre article*/
+.prestation .allarticles h4, .prestation .allarticles p{
+  position: absolute;
+  text-align: center;
+  font-family: raleway;
+}
+.prestation .allarticles h4{
+  padding-top:2px;
+  padding-bottom: 2px;
+  color: #fcfff8;
+  border-top: 2px solid #65ffff;
+  border-bottom: 2px solid #65ffff;
+  background-color: #00a19e;
+  width: 300px;
+  font-size: 26px;
+  top: 0;
+  z-index: 1;
+}
+.prestation .allarticles p{
+  padding: 6px;
+  width: 200px;
+  top: 38px;
+  background-color: rgba(201, 216, 197,0.9);
+  border-radius: 0 0 20px 0px;
+  border-bottom: 3px solid #65ffff;
+}
+
+/*BUTTON*/
+.prestation .allarticles label{
+  box-shadow: 0px 0px 3px 2px grey inset;
+  color: white;
+  border: 1px solid #936d2d;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 5px;
+  width: 100px;
+  height: 40px;
+  background-color: #00a19e;
+  text-align: center;
+  border-radius: 0 10px 0 10px;
+}
+
+.prestation .allarticles label:active{
+  box-shadow: 0px 0px 3px 1px black inset;
 
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Cprestaplus{
+  display: none;
+}
+#prestaplus{
+  height: 80px;
+  overflow: hidden;
+  transition: 1s;
+}
+#Cprestaplus:checked ~ #prestaplus{
+  height: 1080px;
+}
 
 /*CONTACT -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
@@ -232,7 +359,6 @@ tbody{
   width: 100%;
 }
 td {
-
   padding: 5px;
 }
 .carte{
@@ -250,10 +376,10 @@ iframe{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-
+/*CONTACT -------/------/-----/----/---/--/-/
+@@@@@@@@@@@*/
 
 .container {
   max-width: 400px;
@@ -271,6 +397,7 @@ iframe{
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 }
 
+
 #contact {
   height: 550px;
   background: #F9F9F9;
@@ -283,6 +410,7 @@ align-content: space-around;
 align-items: center;
 flex-direction: column;
 }
+
 
 #contact h3 {
   display: block;
@@ -366,43 +494,6 @@ fieldset {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*FOOTER -------/------/-----/----/---/--/-/
 @@@@@@@@@@@*/
 footer {
@@ -435,61 +526,90 @@ footer .reseausocial .fa {
   font-size: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 420px) {
   /*HOME PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
 
+  /* @@@@@@@@@ header @@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@*/
+  header{
+    width: 120px;
+    height: 120px;
+  }
+  header .fa{
+    font-size: 60px;
+    margin: 22px 0 0 25px;
+  }
+  /*nav*/
+  header ul{
+    padding-left: 70px;
+  }
+  header ul li a{
+    font-size: 2.2em;
+  }
+  #hamb:checked ~ #header{
+    height: 400px;
+    width: 400px;
+  }
+
+  /*HOME PAGE -------/------/-----/----/---/--/-/-----
+  @@@@@@@@@@@*/
+  h1{
+    font-size: 3.9em;
+  }
+  /*carousel*/
+  .carousel::after{
+    margin-top: 35px;
+    font-size: 2.4em;
+    line-height: 38px;
+  }
+  .carousel{
+    width: 450px;
+    height: 150px;
+  }
+  .car1,.car2,.car3,.car4,.car5,.car6,.car7,.car8{
+    width: 225px;
+    animation-duration: 24s;
+  }
+  @keyframes carousel {
+    to{
+      transform: translateX(1550px);
+    }
+  }
+
+}
 
 
 
 
+@media (min-width: 650px) {
+  /* @@@@@@@@@ home @@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@*/
+
+  /*carousel*/
+  .carousel{
+    width: 650px;
+  }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 768px) {
+  /*HOME PAGE -------/------/-----/----/---/--/-/-----
+  @@@@@@@@@@@*/
+  h1{
+    font-size: 6em;
+    margin-top: 150px;
+  }
+  /*carousel*/
+  .carousel{
+    width: 768px;
+  }
 
 
   /*EQUUIPE PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
 
   @media (min-width: 768px) {
-
-
 
       .team {
         flex-direction: row;
@@ -509,58 +629,34 @@ footer .reseausocial .fa {
         width: 100%;
       }
 
+  /*PRESTA PAGE -------/------/-----/----/---/--/-/-----*/
+  .allarticles{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  }
 
+  .firstarticles{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+  }
 
+  .allarticles article {
+    margin: 20px;
+  }
+  .allarticles label{
+    display: none;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*PRESTA PAGE -------/------/-----/----/---/--/-/-----
-  @@@@@@@@@@@*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  #prestaplus{
+    height: 540px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+    
+    
   /*CONTACT PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
 
@@ -572,34 +668,6 @@ footer .reseausocial .fa {
       height: 300px;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   /*FOOTER -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
@@ -615,194 +683,105 @@ footer .menufoot .fa{
   font-size: 22px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
 @media (min-width: 992px) {
-  /*HOME PAGE -------/------/-----/----/---/--/-/-----
-  @@@@@@@@@@@*/
 
+    /*HOME PAGE -------/------/-----/----/---/--/-/-----
+    @@@@@@@@@@@*/
 
+    /* @@@@@@@@@ header @@@@@@@@@@@@
+    @@@@@@@@@@@@@@@@@*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*EQUIPE PAGE -------/------/-----/----/---/--/-/-----
-  @@@@@@@@@@@*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  header{
+    width: 15%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  header figure{
+    display: block;
+    width: 129px;
+    margin: 20px 0 0 12%;
+  }
+  /*nav*/
+  header .fa{
+    display: none;
+  }
+  header ul{
+    margin-top: 40%;
+    padding-left: 0;
+  }
+  header ul li{
+    line-height: 50px;
+  }
+  header ul li a{
+    font-size: 1.3em;
+  }
+  /* @@@@@@@@@ HOME @@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@*/
+  #home{
+    width: 85%;
+    margin-left: 15%;
+  }
+  /*carousel*/
+  .carousel::after{
+    margin-top: 55px;
+  }
+  .carousel{
+    width: 85%;
+  }
 
   /*PRESTA PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
+  .prestation{
+    width: 85%;
+    margin-left: 15%;
+  }
 
+  .prestation .allarticles article p{
+    top:100%;
+    padding-right: 30px;
+    padding-left: 20px;
+    width: 90%;
+    height: 90%;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+  .prestation .allarticles article h4{
+    top: 161px;
+    transition: 0.4s;
+  }
+  .prestation article:hover h4{
+    top: 0;
+  }
+  .prestation article:hover p{
+    top:39px;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*CONTACT PAGE -------/------/-----/----/---/--/-/-----
+@media (min-width: 1200px) {
+  /*HOME PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*FOOTER PAGE -------/------/-----/----/---/--/-/-----
+  header ul li a{
+    font-size: 1.7em;
+  }
+  h1{
+    margin-top: 50px;
+  }
+  /*PRESTA PAGE -------/------/-----/----/---/--/-/-----
   @@@@@@@@@@@*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .allarticles{
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+  }
+  .firstarticles{
+    flex-flow: column nowrap;
+    margin-right: 20px;
+  }
+  #prestaplus{
+    flex-flow: row wrap;
+  }
 
 }

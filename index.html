@@ -6,22 +6,37 @@
         <title>More Innovation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <script src="https://use.fontawesome.com/20daec240b.js"></script>
+      
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link href="https://fonts.googleapis.com/css?family=Baloo,Pacifico,Raleway" rel="stylesheet">
+        <link rel="icon" href="logo.png">
+
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://use.fontawesome.com/20daec240b.js"></script>
     </head>
     <body>
       <!-- @@@@@@@@@   HEADER   @@@@@@@@ -->
-      <header>
+      <input type="checkbox" name="hamb" id="hamb" value="">
+      <header id="header">
+        <label for="hamb">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <figure>
+          <img src="logo.png" alt="logo">
+        </figure>
+
         <!-- nav -->
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#equipe">Equipe</a></li>
-            <li><a href="#presation">Préstations</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a tabindex="-1" href="#home">Home</a></li>
+            <li><a tabindex="-1" href="#equipe">Equipe</a></li>
+            <li><a tabindex="-1" href="#prestation">Préstations</a></li>
+            <li><a tabindex="-1" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -29,16 +44,20 @@
 
       <section id="home">
         <!-- titre -->
-        <h1>More Innovation</h1>
-        <h2></h2>
-        <figure class="car1"><img src="img/phone/carousel/carousel1phone.jpg" srcset="img/phone/carousel/carousel1phone.jpg 400w, img/desktop/carousel/carousel1.jpg 768w " alt="images projet"></figure>
-        <figure class="car2"><img src="img/phone/carousel/carousel2phone.jpg" srcset="img/phone/carousel/carousel2phone.jpg 400w, img/desktop/carousel/carousel2.jpg 768w " alt="images projet"></figure>
-        <figure class="car3"><img src="img/phone/carousel/carousel3phone.jpg" srcset="img/phone/carousel/carousel3phone.jpg 400w, img/desktop/carousel/carousel3.jpg 768w " alt="images projet"></figure>
-        <figure class="car4"><img src="img/phone/carousel/carousel4phone.jpg" srcset="img/phone/carousel/carousel4phone.jpg 400w, img/desktop/carousel/carousel4.jpg 768w " alt="images projet"></figure>
-        <figure class="car5"><img src="img/phone/carousel/carousel5phone.jpg" srcset="img/phone/carousel/carousel5phone.jpg 400w, img/desktop/carousel/carousel5.jpg 768w " alt="images projet"></figure>
-        <figure class="car6"><img src="img/phone/carousel/carousel6phone.jpg" srcset="img/phone/carousel/carousel6phone.jpg 400w, img/desktop/carousel/carousel6.jpg 768w " alt="images projet"></figure>
-        <figure class="car7"><img src="img/phone/carousel/carousel7phone.jpg" srcset="img/phone/carousel/carousel7phone.jpg 400w, img/desktop/carousel/carousel7.jpg 768w " alt="images projet"></figure>
-        <figure class="car8"><img src="img/phone/carousel/carousel8phone.jpg" srcset="img/phone/carousel/carousel8phone.jpg 400w, img/desktop/carousel/carousel8.jpg 768w " alt="images projet"></figure>
+        <h1>More <br><span>Innovation</span></h1>
+        <div class="carousel">
+          <!-- <h2>L'imagination est plus importante que le savoir</h2> -->
+
+          <figure class="car1"><img src="img/phone/carousel/carousel1phone.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/carousel/carousel1phone.jpg 400w, img/desktop/carousel/carousel1.jpg 768w " alt="images projet"></figure>
+          <figure class="car2"><img src="img/phone/carousel/carousel2phone.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/carousel/carousel2phone.jpg 400w, img/desktop/carousel/carousel2.jpg 768w " alt="images projet"></figure>
+          <figure class="car3"><img src="img/phone/carousel/carousel3phone.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/carousel/carousel3phone.jpg 400w, img/desktop/carousel/carousel3.jpg 768w " alt="images projet"></figure>
+          <figure class="car4"><img src="img/phone/carousel/carousel4phone.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/carousel/carousel4phone.jpg 400w, img/desktop/carousel/carousel4.jpg 768w " alt="images projet"></figure>
+          <figure class="car5"><img src="img/phone/carousel/carousel5phone.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/carousel/carousel5phone.jpg 400w, img/desktop/carousel/carousel5.jpg 768w " alt="images projet"></figure>
+          <figure class="car6"><img src="img/phone/carousel/carousel6phone.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/carousel/carousel6phone.jpg 400w, img/desktop/carousel/carousel6.jpg 768w " alt="images projet"></figure>
+          <figure class="car7"><img src="img/phone/carousel/carousel7phone.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/carousel/carousel7phone.jpg 400w, img/desktop/carousel/carousel7.jpg 768w " alt="images projet"></figure>
+          <figure class="car8"><img src="img/phone/carousel/carousel8phone.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/carousel/carousel8phone.jpg 400w, img/desktop/carousel/carousel8.jpg 768w " alt="images projet"></figure>
+
+        </div>
       </section>
 
 
@@ -58,7 +77,9 @@
 
       <!-- @@@@@@@@@   EQUIPE   @@@@@@@@ -->
 
+      <section id="equipe">
 
+      </section>
 
 <section class="team"  >
 
@@ -94,46 +115,73 @@ Nous designons des expériences cross canal adaptées à l’usage et aux besoin
 
 
       <!-- @@@@@@@@@   PRESTATIONS  @@@@@@@@ -->
-      <section id="prestation">
+      <section id="prestation" class="prestation">
 
-        <h3>Préstations</h3>
+        <H3>Préstations</H3>
 
-        <article>
-          <figure><img src="img/phone/aide-a-la-vente-pst.jpg" srcset="img/phone/aide-a-la-vente-pst.jpg 400w, img/desktop/aide-a-la-vente-pst.jpg 768w" alt="présation"></figure>
-          <h4>Aide à la vente</h4>
-        </article>
+        <div class="allarticles">
+          <div class="firstarticles">
 
-        <article>
-          <figure><img src="img/phone/appli-metier-pst.jpg" srcset="img/phone/appli-metier-pst.jpg 400w, img/desktop/appli-metier-pst.jpg 768w" alt="présation"></figure>
-          <h4>Appli metier</h4>
-        </article>
+            <article>
+              <figure><img src="img/phone/e-commerce-pst.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/e-commerce-pst.jpg 400w, img/desktop/e-commerce-pst.jpg 768w" alt="présation"></figure>
+              <h4>e-commerce</h4>
+              <p>À l’occasion d’un salon professionnel ou bien lors de l’obtention d’une certification, proposez une interface créative pour maximiser la visibilité.</p>
+            </article>
 
-        <article>
-          <figure><img src="img/phone/ecommerceb2b-pst.jpg" srcset="img/phone/ecommerceb2b-pst.jpg 400w, img/desktop/ecommerceb2b-pst.jpg 768w" alt="présation"></figure>
-          <h4>e-commerce b2b</h4>
-        </article>
+            <article>
+              <figure><img src="img/phone/site-vitrine-pst.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/site-vitrine-pst.jpg 400w, img/desktop/site-vitrine-pst.jpg 768w" alt="présation"></figure>
+              <h4>Site vitrine</h4>
+              <p>Solution idéale lors d’un lancement de produit. Qu’il soit en One Page ou intéractif (3D), le site dédié est la meilleure vitrine pour votre produit.</p>
+            </article>
 
-        <article>
-          <figure><img src="img/phone/e-commerce-pst.jpg" srcset="img/phone/e-commerce-pst.jpg 400w, img/desktop/e-commerce-pst.jpg 768w" alt="présation"></figure>
-          <h4>e-commerce</h4>
-        </article>
 
-        <article>
-          <figure><img src="img/phone/simulation-magasin-pst.jpg" srcset="img/phone/simulation-magasin-pst.jpg 400w, img/desktop/simulation-magasin-pst.jpg 768w" alt="présation"></figure>
-          <h4>Simulation magasin</h4>
-        </article>
+          </div>
 
-        <article>
-          <figure><img src="img/phone/site-vitrine-pst.jpg" srcset="img/phone/site-vitrine-pst.jpg 400w, img/desktop/site-vitrine-pst.jpg 768w" alt="présation"></figure>
-          <h4>Site vitrine</h4>
-        </article>
+          <input type="checkbox" name="oui" id="Cprestaplus" value="">
+
+          <!-- PARTIE CACHEE -->
+          <div id="prestaplus">
+
+            <!-- button -->
+            <label for="Cprestaplus">Plus de préstations</label>
+
+            <article>
+              <figure><img src="img/phone/appli-metier-pst.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/appli-metier-pst.jpg 400w, img/desktop/appli-metier-pst.jpg 768w" alt="présation"></figure>
+              <h4>Appli metier</h4>
+              <p>Solution parfaite pour communiquer avec vos investisseurs, les journalistes ou bien les analystes financiers. Un espace convivial dédié à l’information financière.</p>
+            </article>
+
+            <article>
+              <figure><img src="img/phone/ecommerceb2b-pst.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/ecommerceb2b-pst.jpg 400w, img/desktop/ecommerceb2b-pst.jpg 768w" alt="présation"></figure>
+              <h4>e-commerce b2b</h4>
+              <p>Permet d’offrir à vos clients un e-shop moderne avec des produits accessibles à tout moment et la possibilté d’augmenter votre chiffre d’affaire.</p>
+            </article>
+
+
+            <article>
+              <figure><img src="img/phone/simulation-magasin-pst.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/simulation-magasin-pst.jpg 400w, img/desktop/simulation-magasin-pst.jpg 768w" alt="présation"></figure>
+              <h4>Simulation</h4>
+              <p>Cette solution offre un espace idéal pour exposer votre métier et les postes à pourvoir. Elle permet aussi de fédérer ses ressources.</p>
+            </article>
+
+
+            <article>
+              <figure><img src="img/phone/aide-a-la-vente-pst.jpg" sizes="(min-width:640px) 1420px, 320px" srcset="img/phone/aide-a-la-vente-pst.jpg 400w, img/desktop/aide-a-la-vente-pst.jpg 768w" alt="présation"></figure>
+              <h4>Aide à la vente</h4>
+              <p>Idéal pour affirmer le positionnement de votre marque, exposer la valeur ajoutée de votre société et enfin soigner votre image de marque.</p>
+            </article>
+
+          </div>
+        </div>
 
       </section>
 
 
 
       <!-- @@@@@@@@@   CONTACT   @@@@@@@@ -->
+      <section id="contact">
 
+      </section>
 
       <section class="partcontact">
 
